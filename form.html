@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a>
+            </li>
+            <li>Residents
+                <ul>
+                    <li>Voting</li>
+                    <li>Aid</li>
+                </ul>
+            </li>
+            <li>Cities to Visit
+                <ul>
+                    <li><a href="Columbus.html">Columbus</a></li>
+                    <li><a href="Cleveland.html">Cleveland</a></li>
+                    <li><a href="Akron.html">Akron</a></li>
+                </ul>
+            </li>
+            <li>Government
+                <ul>
+                    <li>State Laws</li>
+                    <li>Public Services</li>
+                </ul>
+            </li>
+            <li>Jobs
+                <ul>
+                    <li>Job Listings</li>
+                    <li>Unemployment Info</li>
+                </ul>
+            </li>
+        </ul>
+        <form>
+            <input type="search" placeholder="Search">
+        </form>
+    </nav>
+    <section class="hero">
+        <img src="images/ohio-hero.png" alt="">
+    </section>
+    <div class="main">
+        <section class="article">
+            <h1>Question Form</h1>
+            <form>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email@email.com">
+
+                <label for="email2">Confirm Email:</label>
+                <input type="email" id="email2" name="email2" placeholder="email@email.com">
+
+                <label for="Question">Question:</label>
+                <textarea id="Question" name="Question" required placeholder="Question"></textarea>
+                <input type="submit" value="Submit Question">
+            </form>
+        </section>
+        <aside class="aside">
+            <h1>Useful Links</h1>
+            <ul>
+                <li><a href="https://www.google.com/maps/place/Ohio/@40.3332656,-85.3144087,7z/data=!3m1!4b1!4m6!3m5!1s0x8836e97ab54d8ec1:0xe5cd64399c9fd916!8m2!3d40.4172871!4d-82.907123!16zL20vMDVra2g?entry=ttu" target="_blank">Map</a></li>
+                <li><a href="https://www.tripadvisor.com/Attractions-g28956-Activities-Ohio.html" target="_blank">TripAdvisor</a></li>
+                <li><a href="https://www.census.gov/quickfacts/fact/table/OH,US/PST045223" target="_blank">Census.gov QuickFacts</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer id="footer">
+        footer powered by sleep deprivation 2024
+    </footer>
+</body>
+</html>
