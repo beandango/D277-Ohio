@@ -50,22 +50,24 @@
     <div class="main">
         <section class="article">
             <h1>Question Form</h1>
-            <form>
+            <form id="questionForm" onsubmit="return validateEmails()">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required placeholder="First Name">
-
+        
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
-
+        
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="email@email.com">
-
+                <input type="email" id="email" name="email" placeholder="email@email.com" required>
+        
                 <label for="email2">Confirm Email:</label>
-                <input type="email" id="email2" name="email2" placeholder="email@email.com">
-
+                <input type="email" id="email2" name="email2" placeholder="email@email.com" required>
+        
                 <label for="Question">Question:</label>
                 <textarea id="Question" name="Question" required placeholder="Question"></textarea>
+                
                 <input type="submit" value="Submit Question">
+                <p id="emailError" class="error">Email addresses do not match.</p>
             </form>
         </section>
         <aside class="aside">
@@ -81,5 +83,7 @@
     <footer id="footer">
         footer powered by sleep deprivation 2024
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
